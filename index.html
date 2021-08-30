@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tip calculator</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+	<section>
+		<div id="logo"><img src="images/logo.svg" alt=""></div>
+		<div id="calculator">
+			<div id="input">
+				<div id="bill">
+					<label>Bill</label>
+					<div class="error bill">Can't be zero</div>
+					<input class="" type="number" value="0"><img src="images/icon-dollar.svg" class="placeholder">
+					
+				</div>
+				<div id="select">
+					<label>Select Tip %</label>
+					<div id="select-boxes">
+						<div class="box">5</div>
+						<div class="box">10</div>
+						<div class="box">15</div>
+						<div class="box">25</div>
+						<div class="box">50</div>
+						<div class="box"><input type="text" placeholder="Custom"></div>
+					</div>
+				</div>
+				<div id="people-count">
+					<label>Number of People</label>
+					<div class="error peoplenumber">Can't be zero</div>
+					<input class="" type="number" value="0"><img src="images/icon-person.svg" class="placeholder">
+				</div>
+			</div>
+			<div id="output">
+				<div id="tip-amount">
+					<label>Tip Amount<span>/ person</span></label>
+					<input type="text" value="$0.00" readonly>
+				</div>
+				<div id="total">
+					<label>Total <span>/ person</span></label>
+					<input type="text" value="$0.00" readonly>
+				</div>
+				<button class="reset" type="reset" value="reset">Reset</button>
+
+			</div>
+		</div>
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>
